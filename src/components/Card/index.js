@@ -24,8 +24,8 @@ const Card = ({items = [], name}) => (
   <Wrapper>
     <Name>{name}</Name>
     <List>
-      {items.map(item => (
-        <ListItem>{item}</ListItem>
+      {items.map((item, i)  => (
+        <ListItem key={i}>{item}</ListItem>
       ))}
     </List>
   </Wrapper>
